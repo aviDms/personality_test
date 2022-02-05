@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% block content %}
+<h2>
+    It looks like you are an
+        {% if is_extrovert %}
+        <span class="result">extrovert</span>. Congratulations!
+        {% else %}
+        <span class="result">introvert</span>. But you already knew that.
+        {% endif %}
+</h2>
+<p>
+    Go back <a href="/">home</a> or <a href="{{ url_for('start') }}">take the test</a> again.
+</p>
+{% endblock %}

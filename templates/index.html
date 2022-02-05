@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personality Test</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Are you an introvert or an extrovert?</h1>
+        </header>
+
+        <div class="content">
+        {% block content %}{% endblock %}
+        </div>
+
+        <div class="footer">Questionnaire took from <a
+            href="https://www.psychologies.co.uk/self/are-you-an-introvert-or-an-extrovert.html">psychologies.co.uk</a>
+    </div>
+</body>
+
+</html>

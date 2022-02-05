@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+{% block content %}
+    <p>Click on the button below to start the test!</p>
+    <form action="/start">
+        <input type="hidden" id="startTest" name="startTest" value="startTest">
+        <input type="submit" class="btn btn-primary" value="Start">
+    </form>
+{% endblock %}

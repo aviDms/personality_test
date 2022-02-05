@@ -1,0 +1,101 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    color: rgb(41, 41, 41);;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: darkorchid;
+}
+
+input[type=radio] {
+    border: 0px;
+    height: 18px;
+    width: 18px;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+
+label {
+    font-size: 22px;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+
+.container {
+    padding: 2em 2em 2em 2em;
+}
+
+.content {
+    min-height: 50vh;
+}
+
+.footer {
+    margin-top: 2em;
+    color: gray;
+}
+
+.btn {
+    margin-top: 1em;
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    border-style: hidden;
+    color: white;
+}
+
+.btn-primary {
+    cursor: pointer;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #ff006f, #9932cc 100%);
+}
+
+.btn-close {
+    background-color: rgb(194, 194, 194);
+}
+
+
+.result {
+    background: #ff006f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff006f, #9932cc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff006f, #9932cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 2.5em; 
+    }
+
+    h2 {
+        font-size: 2em; 
+    }
+
+    .container {
+        padding: 1em 1em 1em 1em;
+    }
+}

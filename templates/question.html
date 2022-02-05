@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block content %}
+<h2 class="question">{{ question['question'] }}</h2>
+
+<form id="answer" method="POST" action="{{ url_for('update_score') }}">
+    {% for answer in answers %}
+    <input type="radio" id="{{ answer['id'] }}" name="answers" value=" {{ answer['score'] }}" required>
+    <label for="{{ answer['id'] }}"> {{ answer['answer'] }} </label><br>
+    {% endfor %}
+    <input type="hidden" name="questionId" value="{{ question['id'] }}">
+    <input type="hidden" name="isLast" value="{{ question['is_last'] }}">
+    <input type="submit" class="btn btn-primary" value="Submit">
+    <a href="/" class="btn btn-close">Close</a>
+</form>
+{% endblock %}
