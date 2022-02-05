@@ -1,7 +1,5 @@
 # Personality Test Flask Example
-Simple personality test app developed using Flask. The questions are taken from [psychologies.co.uk](https://www.psychologies.co.uk/self/are-you-an-introvert-or-an-extrovert.html)
-
-## Setup Instructions
+Simple personality test app developed using Flask. The questions are taken from [psychologies.co.uk](https://www.psychologies.co.uk/self/are-you-an-introvert-or-an-extrovert.html).
 
 Dependencies:
 * (Poetry package manager)[https://python-poetry.org/docs/#installation]
@@ -9,6 +7,7 @@ Dependencies:
 * (SQLite)[https://flask.palletsprojects.com/en/2.0.x/patterns/sqlite3/]
 * (Black)[https://github.com/psf/black]
 
+## Setup Instructions
 1. Install requirements with `Poetry`:
 ```bash
 poetry init
@@ -20,10 +19,11 @@ for installation instructions.
 ```bash
 poetry run python
 ```
-From inside the newly open python interpreter:
+From the python interpreter, run:
 ```python
 from app import init_db
 init_db()
+exit()
 ```
 The `schema.sql` file holds the schema of the database as well as some inital data.
 
